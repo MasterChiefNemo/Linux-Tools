@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# Chef Download and Installation tool.
+# Chef Download and Installation tool for Fedora
+# based Linux Operating Systems.
 #
 # Damien Hunter 25/7/2016 damien.hunter9@gmail.com
 

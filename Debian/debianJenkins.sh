@@ -8,8 +8,8 @@ wget -q -O - http://pkg.jenkins-ci.org/debian-stable/jenkins-ci.org.key | sudo a
 deb http://pkg.jenkins-ci.org/debian-stable binary/
 
 # Install Jenkins
-sudo apt-get update
-sudo apt-get install jenkins
+sudo apt-get -y update
+sudo apt-get install -y jenkins
 
 # Start Jenkins
 service jenkins start
