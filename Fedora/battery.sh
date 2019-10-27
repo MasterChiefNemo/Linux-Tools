@@ -10,4 +10,4 @@ sudo yum install tlp tlp-rdw -y
 sudo tlp start
 
 # Zram tool to increase Ram efficency.
-sudo yum install -y  zram
+sudo dnf install -y  zram
