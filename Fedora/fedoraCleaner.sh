@@ -14,5 +14,5 @@ sleep 5
 
 echo "Remove unnecessary bak files!"
 find / -name *.bak -type f -delete
-echo "Done!"
+echo "All Complete!"
 sleep 5
