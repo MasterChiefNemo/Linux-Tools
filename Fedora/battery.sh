@@ -5,9 +5,9 @@
 #
 # Damien Hunter (damien.hunter9@gmail.com) 26/12/2015
 sudo add-yum-repository ppa:linrunner/tlp
-sudo yum update
-sudo yum install tlp tlp-rdw -y
+sudo dnf update -y
+sudo dnf install tlp tlp-rdw -y
 sudo tlp start
 
 # Zram tool to increase Ram efficency.
-sudo dnf install -y  zram
+sudo dnf install -y zram
