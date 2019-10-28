@@ -1,8 +1,9 @@
 #!/bin/bash
 
-# A simple script to install Jenkins.
+# A simple script to install and configure Jenkins for immediate use.
+# Will automatically start Jenkins.
 # 
-# Damien Hunter (damien.hunter9@gmail.com) 9/1/2016
+# Damien Hunter (damien.hunter9@gmail.com) 28/10/2019 - Updated
 
 # Download and Install Jenkins
 sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
