@@ -8,4 +8,10 @@ sudo systemctl enable httpd
 sudo firewall-cmd --add-service={http,https} --permanent
 sudo firewall-cmd --reload
 
-sudo dnf -y install phpMyAdmin -y
+sudo dnf install phpMyAdmin -y
+
+sudo php -v
+sudo systemctl restart httpd
+
+echo "The HTTPD Server has been restarted. You can "
+echo "now access you phpmyadmin install at 127.0.0.1/phpmyadmin/
