@@ -5,14 +5,14 @@
 #
 # Damien Hunter (damien.hunter9@gmail.com) 26/12/2015
 
-dnf update -y
-dnf clean all
+sudo dnf update -y
+sudo dnf clean all
 
 echo "Remove unnecessary log files!"
-find / -name *.log -type f -delete
+sudo find / -name *.log -type f -delete
 sleep 5
 
 echo "Remove unnecessary bak files!"
-find / -name *.bak -type f -delete
+sudo find / -name *.bak -type f -delete
 echo "All Complete!"
 sleep 5
