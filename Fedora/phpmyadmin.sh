@@ -14,4 +14,4 @@ sudo php -v
 sudo systemctl restart httpd
 
 echo "The HTTPD Server has been restarted. You can "
-echo "now access you phpmyadmin install at 127.0.0.1/phpmyadmin/
+echo "now access you phpmyadmin install at 127.0.0.1/phpmyadmin/"
