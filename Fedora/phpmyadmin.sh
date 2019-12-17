@@ -1,4 +1,7 @@
 #! /bin/bash
+# This must be run with sudo and like my other scripts, it's run at your
+# own risk. Installs required packages for phpmyadmin, installs it, then
+# automatical restarts httpd.
 
 sudo dnf -y install httpd php php-cli php-php-gettext php-mbstring php-mcrypt php-mysqlnd php-pear php-curl php-gd php-xml php-bcmath php-zip -y
 
