@@ -1,4 +1,9 @@
 #! /bin/bash
+# As much as I'd love to, I won't talk any responsibility
+# should this script cause you any issues. You run this at
+# your own risk.
+#
+# Damien Hunter damien.hunter9@gmail.com
 
 echo "Starting System Update"
 sudo dnf update -y
