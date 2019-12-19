@@ -17,13 +17,12 @@ sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
 sudo dnf install flash-plugin -y
 
 # More
-sudo dnf install gnome-tweak-tool gimp inkscape thunderbird bluefish filezilla vlc python-openoffice dconf-editor epiphany gnome-tweak-tool -y
+sudo dnf install gnome-tweak-tool gimp inkscape thunderbird bluefish filezilla vlc dconf-editor epiphany gnome-tweak-tool -y
 
 # Codecs
 sudo dnf install gstreamer gstreamer-plugins-ugly gstreamer-ffmpeg gstreamer1-libav gstreamer1-plugins-bad-freeworld gstreamer1-plugins-base-tools gstreamer1-plugins-good-extras gstreamer1-plugins-good gstreamer1-plugins-base gstreamer1 -y
 
 # Remove
-sudo dnf remove evolution rhythmbox empathy gnome-maps -y
 sudo dnf autoremove -y
 
 # Fedy
