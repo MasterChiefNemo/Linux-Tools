@@ -4,7 +4,6 @@
 
 # Install Fedy to run Desktop Applications with a better experience
 sudo dnf update
-sudo curl http://folkswithhats.org/fedy-installer -o fedy-installer && chmod +x fedy-installer && ./fedy-installer
 
 # Other Packages
 sudo dnf install -y vlc				# Install VLC
