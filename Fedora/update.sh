@@ -6,7 +6,7 @@
 # Damien Hunter damien.hunter9@gmail.com
 
 echo "Starting System Update"
-sudo dnf update -y
+sudo dnf update --best --allowerasing -y
 sudo dnf upgrade -y
 echo "Updates and Upgrades complete..."
 sleep 5
