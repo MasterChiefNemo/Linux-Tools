@@ -7,7 +7,7 @@
 
 echo "Starting System Update"
 sudo dnf update --best --allowerasing -y
-sudo dnf upgrade -y
+sudo dnf upgrade --best --allowerasing -y
 echo "Updates and Upgrades complete..."
 sleep 5
 
