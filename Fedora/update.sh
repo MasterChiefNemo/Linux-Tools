@@ -13,6 +13,7 @@ sleep 5
 
 echo "Removing unnecessary files...."
 sudo dnf autoremove -y
+sudo dnf clean all
 echo "Files removed"
 sleep 5
 echo "Complete!"
