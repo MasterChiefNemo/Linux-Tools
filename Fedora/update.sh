@@ -1,5 +1,5 @@
 #! /bin/bash
-# As much as I'd love to, I won't take any responsibility
+# As much as Id love to, I won't take any responsibility
 # should this script cause you any issues. You run this at
 # your own risk.
 #
