@@ -3,19 +3,15 @@
 # own risk. Installs required packages for phpmyadmin, installs it, then
 # automatical restarts httpd.
 
-sudo dnf -y install httpd php php-cli php-php-gettext php-mbstring php-mcrypt php-mysqlnd php-pear php-curl php-gd php-xml php-bcmath php-zip -y
+sudo dnf install httpd php php-cli php-json php-mbstring php-pdo php-pecl-zip php-mysqlnd -y
+sudo systemctl start mariadb
+sudo systemctl enable mariadb
 
-sudo systemctl start httpd
-sudo systemctl enable httpd
+cd /var/www/html
+sudo wget https://files.phpmyadmin.net/phpMyAdmin/4.9.4/phpMyAdmin-4.9.4-all-languages.zip
+sudo unzip phpMyAdmin-4.9.4-all-languages.zip
+sudo mv phpMyAdmin-4.9.4-all-languages phpmyadmin
 
-sudo firewall-cmd --add-service={http,https} --permanent
-sudo firewall-cmd --reload
-
-sudo dnf install phpMyAdmin -y
-
-sudo php -v
-sudo systemctl restart httpd
-
-echo "The HTTPD Server has been restarted. You can "
-echo "now access your phpmyadmin install at 127.0.0.1/phpmyadmin/"
-
+sudo chown -R apache:apache /var/www/html/phpmyadmin
+sudo cd /var/www/html/phpmyadmin
+sudo mv config.sample.inc.php config.inc.php
