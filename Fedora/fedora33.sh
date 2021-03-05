@@ -11,5 +11,5 @@
 
 sudo dnf upgrade --refresh -y
 sudo dnf install dnf-plugin-system-upgrade -y
-sudo dnf system-upgrade download --releasever=32 -y
+sudo dnf system-upgrade download --releasever=33 -y
 sudo dnf system-upgrade reboot
