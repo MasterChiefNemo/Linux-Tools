@@ -7,7 +7,7 @@
 # See https://www.if-not-true-then-false.com/2013/install-mariadb-on-fedora-centos-rhel/
 # for full set up and configuration notes.
 
-sudo dnf install mariadb mariadb-server # Install Mariadb
+sudo dnf install mariadb mariadb-server -y # Install Mariadb
 systemctl enable mariadb.service # Enable and Start Mariadb
 systemctl start mariadb.service
 
