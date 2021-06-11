@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Install and configure phpmyadmin web front end on centos 8. Script
+# created by Damien Hunter (damien.hunter9@gmail.com)
+
+sudo wget https://files.phpmyadmin.net/phpMyAdmin/4.9.4/phpMyAdmin-4.9.4-all-languages.zip
+sudo unzip phpMyAdmin-4.9.4-all-languages.zip
+sudo mv phpMyAdmin-4.9.4-all-languages.zip /usr/share/phpmyadmin
+cd /usr/share/phpmyadmin
+sudo mv config.sample.inc.php config.inc.php
