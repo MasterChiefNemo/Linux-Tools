@@ -5,6 +5,7 @@
 
 sudo wget https://files.phpmyadmin.net/phpMyAdmin/4.9.4/phpMyAdmin-4.9.4-all-languages.zip
 sudo unzip phpMyAdmin-4.9.4-all-languages.zip
+sudo mkdir /usr/share/phpmyadmin
 sudo mv phpMyAdmin-4.9.4-all-languages.zip /usr/share/phpmyadmin
 cd /usr/share/phpmyadmin
 sudo mv config.sample.inc.php config.inc.php
