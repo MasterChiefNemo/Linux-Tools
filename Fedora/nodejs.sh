@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 sudo dnf install gcc-c++ make -y
 sudo curl -sL https://rpm.nodesource.com/setup_14.x | sudo -E bash -
