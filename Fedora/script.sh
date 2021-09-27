@@ -3,7 +3,7 @@
 cd fabric-samples/test-network
 sudo ./network.sh down
 sudo ./network.sh up createChannel -c mychannel -ca -s couchdb
-sudo ./network.sh deployCC -ccn secured -ccp ../asset-transfer-secured-agreement/chaincode-go/ -ccl go -ccep "OR('Org1MSP.peer','Org2MSP.peer')"
+sudo ./network.sh deployCC -ccn secured -ccp ../asset-transfer-basic/chaincode-go/ -ccl go -ccep "OR('Org1MSP.peer','Org2MSP.peer')"
 
 export PATH=${PWD}/../bin:${PWD}:$PATH
 export FABRIC_CFG_PATH=$PWD/../config/
