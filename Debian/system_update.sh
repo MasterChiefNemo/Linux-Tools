@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Script to quickly update Debian based systems.
-# Author: Damien Hunter (damien.hunter9@gmail.com)
+# Author: Damien Hunter damien.hunter9@gmail.com
+
 echo "Starting System Update..."
 sudo apt-get update -y && sudo apt-get upgrade -y
 echo
