@@ -1,4 +1,12 @@
 #!/bin/sh
+#
+# Initial set up script for CentOS. Good script to use to get CentOS on Google GCP
+# running as required, quickly.
+#
+# Like all my scripts, you run this at your own risk.
+#
+# Author: Damien Hunter damien.hunter9@gmail.com
+#
 
 sudo dnf install epel-release wget curl golang git -y
 sudo dnf update -y && sudo dnf upgrade -y
